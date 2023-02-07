@@ -1,0 +1,35 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: peachpuff;
+    border: 15px solid aqua;
+    padding: 15px;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+div {
+    transition: background-color 300ms;
+}
+
+div.square:hover {
+    background-color: blueviolet;
+}
+
+button {
+    animation: float 2000ms infinite alternate-reverse;
+    transition: all 300ms;
+}
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0)
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
